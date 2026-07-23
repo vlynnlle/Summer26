@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>for you 𖧡</title>
+
+ <link href="[Googleapis](https://fonts.googleapis.com/css2?family=Playfair+Display:ital),wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+ <style>
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+
+ body {
+ margin: 0;
+ height: 100vh;
+ height: 100dvh;
+ background: linear-gradient(160deg, #f7efe8 0%, #efe3d9 50%, #e8d9cc 100%);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: 'Playfair Display', serif;
+ overflow: hidden;
+ position: relative;
+ }
+
+ /* blurred pastel blobs */
+.blob {
+ position: fixed;
+ border-radius: 50%;
+ filter: blur(70px);
+ -webkit-filter: blur(70px);
+ opacity: 0.65;
+ pointer-events: none;
+ z-index: 0;
+ }
+
+ /* floating flowers */
+.flower {
+ position: fixed;
+ opacity: 0.3;
+ pointer-events: none;
+ user-select: none;
+ animation: sway 10s ease-in-out infinite;
+ z-index: 1;
+ }
+
+ @keyframes sway {
+ 0%, 100% { transform: translateY(0) rotate(0deg); }
+ 50% { transform: translateY(-16px) rotate(5deg); }
+ }
+
+.card {
+ width: 520px;
+ max-width: 90%;
+ background: rgba(255, 250, 244, 0.82);
+ backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ border: 1.5px solid rgba(196, 154, 130, 0.5);
+ border-radius: 32px;
+ padding: 52px 46px;
+ text-align: center;
+ box-shadow: 0 20px 48px rgba(120, 90, 70, 0.10);
+ position: relative;
+ z-index: 3;
+ display: flex;
+ flex-direction: column;
+ max-height: 80vh;
+ }
+
+ h1 {
+ font-family: 'Playfair Display', serif;
+ font-weight: 400;
+ font-style: italic;
+ font-size: 36px;
+ color: #8f5e48;
+ margin-bottom: 24px;
+ flex-shrink: 0;
+ letter-spacing: 1.5px;
+ line-height: 1.3;
+ }
+
+.note {
+ font-size: 18px;
+ line-height: 2;
+ color: #4d362c;
+ white-space: pre-line;
+ overflow-y: auto;
+ padding-right: 6px;
+ font-weight: 400;
+ letter-spacing: 0.3px;
+ }
+
+.note::-webkit-scrollbar {
+ width: 6px;
+ }
+.note::-webkit-scrollbar-thumb {
+ background: #dcc4b4;
+ border-radius: 10px;
+ }
+ </style>
+</head>
+
+<body>
+
+<div class="blob" style="width:400px;height:400px;background:#f5d0c0;top:-120px;left:-120px;"></div>
+<div class="blob" style="width:350px;height:350px;background:#c8e0c8;bottom:-80px;left:-80px;"></div>
+<div class="blob" style="width:380px;height:380px;background:#f5e0a0;top:5%;right:-140px;"></div>
+<div class="blob" style="width:320px;height:320px;background:#c8d8e8;bottom:15%;right:-100px;"></div>
+<div class="blob" style="width:300px;height:300px;background:#e0c8e8;top:45%;left:-100px;"></div>
+<div class="blob" style="width:260px;height:260px;background:#f5d0d0;bottom:-50px;right:15%;"></div>
+<div class="blob" style="width:280px;height:280px;background:#d0e0b8;top:0%;left:25%;"></div>
+
+<script>
+ const flora = ["🌸","🌼","🌻","🌷","🌺","🪷","🌿","✿","𓆸","𖧡"];
+ for (let i = 0; i < 28; i++) {
+ const el = document.createElement("div");
+ el.className = "flower";
+ el.innerText = flora[Math.floor(Math.random() * flora.length)];
+ el.style.left = Math.random() * 100 + "vw";
+ el.style.top = Math.random() * 100 + "vh";
+ el.style.fontSize = (16 + Math.random() * 22) + "px";
+ el.style.animationDelay = (Math.random() * 6) + "s";
+ el.style.animationDuration = (7 + Math.random() * 5) + "s";
+ document.body.appendChild(el);
+ }
+</script>
+
+<div class="card">
+ <h1>first year, done</h1>
+
+ <div class="note">
+ halo sherin 🌻
+ 
+ pertama-tama, congrats!
+ we've made through our first year in UPH.
+ aku ga akan bilang "ga kerasa" karena jujur,
+ emang kerasa banget.
+ dan... mungkin ini terdengar basi karena udah sering diucapin but,
+ I'm so proud of us.
+ of you, especially.
+ 
+ aku ga akan berpura-pura dengan bilang setahun belakangan ini mudah.
+ nggak. it was not easy at all.
+ kamu telah melalui semuanya dengan penuh darah dan air mata.
+ but hey, kamu masih di sini kan?
+ and that's all that matters.
+ kamu masih di sini dan lihat dirimu sekarang!
+ you're even stronger and better than before.
+ you've grown so much this past year, sherin.
+ please, jangan pernah bilang diri kamu lemah lagi.
+ you're one of the strongest people I know.
+ 
+ dan... ga tau ya ini di aku doang atau kamu juga,
+ but, I know things have been kinda weird between us these past few weeks.
+ ada momen yang benar-benar buat aku berefleksi and...
+ you'd be glad to know that I've been doing better, hehe.
+ I know I can be too much sometimes,
+ but I'm still glad kamu masih mau temenan sama aku,
+ despite everything.
+ 
+ aku juga mau minta maaf :( buat semua hal yang udah aku lakuin.
+ perkataan maupun tindakan aku yang menyakiti kamu
+ I never meant to, I swear.
+ all I've ever wanted is for you to be happy.
+ but, yeah... I'll do my best to be a better friend this year.
+ 
+ aku tau, things are really hard for you right now,
+ so, please. take as much time and space as you need.
+ I'll be rooting for you, here, dari samping hehe.
+ dan uhm... kalau semisalnya you ever need a shoulder to cry on,
+ or an ear to listen to all of your problems,
+ I'll be right here.
+ tapi ga, aku akan tetep jalanin hidup aku sendiri kok.
+ 
+ thank you for this one year ya, sherin.
+ thank you for all the memories, tears and laughter.
+ tapi di atas semua itu, terima kasih karena sudah tetap menjadi diri kamu yang super keren.
+ you've inspired me to become a better person.
+ for me, and for all of my loved ones.
+ semangat banyak banyak (100000x) untuk WO-nya ya.
+ aku tau ini tidak mudah,
+ jadi untuk urusan HMPSP akan banyak aku bantu xixi
+ good luck untuk MC U-FEST-nya juga ya!
+ I know you'll do great. baik di U-FEST maupun di acara lain.
+ you have a talent for it, you know?
+ 
+ terakhir, semangat untuk kamu, our waketu!
+ let's crush this next year together, ya?
+ semangat dan good luck untuk semester 3, BPH HMPSP dan segala prokernya, tugas dan ujian kuliah, beserta semua tugas WO-mu, plus segala kegiatan gila lainnya yang somehow kita akan terlibat juga wkwk.
+ bisa, pasti bisa dilalui dengan baik.
+ tau ga aku tau itu dari mana?
+ karena kamu punya Tuhan yang menopang kamu, yang siap tangkap kamu kalau kamu jatuh.
+ Tuhan yang sama yang membawamu ke UPH adalah Tuhan yang sama yang akan menuntunmu hingga lulus nanti.
+ dan... ini penting juga. you have us, your friends. you have me.
+ you're not alone sherin.
+ 
+ ayo kita kerja sama dan selesaikan tahun depan dengan baik, yeah? 
+ 
+
+ see you next semester, erin cinta
+
+ with love,
+ aily
+ </div>
+</div>
+
+</body>
+</html>

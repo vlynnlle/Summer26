@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>summer '26</title>
+
+ <link href="[Googleapis](https://fonts.googleapis.com/css2?family=Playfair+Display:ital),wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+ <style>
+ * {
+ box-sizing: border-box;
+ }
+
+ body {
+ margin: 0;
+ height: 100vh;
+ height: 100dvh;
+ background: linear-gradient(160deg, #f7efe8 0%, #efe3d9 50%, #e8d9cc 100%);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: 'Inter', sans-serif;
+ overflow: hidden;
+ position: relative;
+ }
+
+ /* blurred pastel flower blobs */
+.blob {
+ position: fixed;
+ border-radius: 50%;
+ filter: blur(70px);
+ -webkit-filter: blur(70px);
+ opacity: 0.65;
+ pointer-events: none;
+ z-index: 0;
+ }
+
+ /* floating delicate symbols */
+.float {
+ position: fixed;
+ opacity: 0.15;
+ pointer-events: none;
+ user-select: none;
+ animation: drift 12s ease-in-out infinite;
+ z-index: 1;
+ }
+
+ @keyframes drift {
+ 0%, 100% { transform: translateY(0) rotate(0deg); }
+ 50% { transform: translateY(-28px) rotate(5deg); }
+ }
+
+.card {
+ width: 380px;
+ max-width: 90%;
+ background: rgba(255, 250, 244, 0.78);
+ backdrop-filter: blur(14px);
+ -webkit-backdrop-filter: blur(14px);
+ border-radius: 32px;
+ padding: 52px 38px 44px;
+ text-align: center;
+ box-shadow: 0 20px 48px rgba(120, 90, 70, 0.12);
+ position: relative;
+ z-index: 3;
+ border: 1px solid rgba(230, 210, 190, 0.4);
+ }
+
+.ornament {
+ font-size: 22px;
+ letter-spacing: 0px;
+ color: #b5927e;
+ margin-bottom: 2px;
+ }
+
+ h1 {
+ font-family: 'Playfair Display', serif;
+ font-weight: 400;
+ font-style: italic;
+ font-size: 42px;
+ color: #7a5a4a;
+ margin: 6px 0 4px;
+ letter-spacing: 1px;
+ }
+
+.sub {
+ font-size: 13px;
+ font-weight: 300;
+ color: #b5927e;
+ text-transform: uppercase;
+ letter-spacing: 3.5px;
+ margin: 0 0 4px;
+ margin-left: 10px;
+ }
+
+.divider {
+ width: 44px;
+ height: 1px;
+ background: #dcc4b4;
+ margin: 16px auto 20px;
+ }
+
+.greeting {
+ font-size: 17px;
+ font-weight: 300;
+ color: #7a5a4a;
+ line-height: 1.7;
+ margin: 0 0 24px;
+ }
+
+.greeting em {
+ font-style: italic;
+ color: #b07a64;
+ }
+
+ input {
+ width: 100%;
+ padding: 14px 18px;
+ border-radius: 28px;
+ border: 1px solid #e0cdbe;
+ font-size: 15px;
+ font-weight: 300;
+ text-align: center;
+ outline: none;
+ background: rgba(255, 255, 255, 0.8);
+ color: #4d362c;
+ font-family: 'Inter', sans-serif;
+ transition: border 0.3s, box-shadow 0.3s;
+ }
+
+ input:focus {
+ border-color: #b5927e;
+ box-shadow: 0 0 0 3px rgba(181, 146, 126, 0.15);
+ }
+
+ input::placeholder {
+ color: #ccb6a8;
+ font-style: italic;
+ }
+
+ button {
+ margin-top: 18px;
+ padding: 11px 38px;
+ border-radius: 28px;
+ border: none;
+ background: #7a5a4a;
+ color: #fff;
+ font-size: 14px;
+ font-weight: 400;
+ font-family: 'Inter', sans-serif;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ cursor: pointer;
+ transition: background 0.25s;
+ }
+
+ button:hover {
+ background: #65483a;
+ }
+
+.footer-note {
+ margin-top: 26px;
+ font-size: 13px;
+ font-weight: 300;
+ color: #c9b1a2;
+ font-style: italic;
+ }
+ </style>
+</head>
+<body>
+
+<div class="blob" style="width:400px;height:400px;background:#f5d0c0;top:-120px;left:-120px;"></div>
+<div class="blob" style="width:350px;height:350px;background:#c8e0c8;bottom:-80px;left:-80px;"></div>
+<div class="blob" style="width:380px;height:380px;background:#f5e0a0;top:5%;right:-140px;"></div>
+<div class="blob" style="width:320px;height:320px;background:#c8d8e8;bottom:15%;right:-100px;"></div>
+<div class="blob" style="width:300px;height:300px;background:#e0c8e8;top:45%;left:-100px;"></div>
+<div class="blob" style="width:260px;height:260px;background:#f5d0d0;bottom:-50px;right:15%;"></div>
+<div class="blob" style="width:280px;height:280px;background:#d0e0b8;top:0%;left:25%;"></div>
+
+<script>
+ const flora = ["✦","✿","❀","𖦹","𓇢","𓆸","𓇣","𖧧"];
+ for (let i = 0; i < 22; i++) {
+ const el = document.createElement("div");
+ el.className = "float";
+ el.innerText = flora[Math.floor(Math.random() * flora.length)];
+ el.style.left = Math.random() * 100 + "vw";
+ el.style.top = Math.random() * 100 + "vh";
+ const size = 14 + Math.random() * 18;
+ el.style.fontSize = size + "px";
+ el.style.animationDelay = (Math.random() * 6) + "s";
+ el.style.animationDuration = (9 + Math.random() * 5) + "s";
+ document.body.appendChild(el);
+ }
+</script>
+
+<div class="card">
+ <div class="ornament">✿</div>
+ <p class="sub">summer '26</p>
+ <h1>Ciao, First Year!</h1>
+ <div class="divider"></div>
+ <p class="greeting">
+ for the ones who made it through<br />
+ <em>enter your flower code</em>
+ </p>
+
+ <input id="code" placeholder="✿ your code ✿" autocomplete="off" />
+ <button onclick="go()">enter</button>
+
+ <p class="footer-note">— with love, ailyra —</p>
+</div>
+
+<script>
+ const passcodes = {
+ "sunflower": "erin.html",
+ "daisy": "friend2.html",
+ "lavender": "friend3.html",
+ "rose": "friend4.html",
+ "poppy": "friend5.html",
+ "lotus": "friend6.html",
+ "jasmine": "friend7.html",
+ "tulip": "friend8.html",
+ "lily": "friend9.html",
+ "cherryblossom": "friend10.html",
+ "marigold": "friend11.html",
+ "iris": "friend12.html"
+ };
+
+  function go() {
+ const val = document.getElementById("code").value.toLowerCase().trim();
+ if (passcodes[val]) {
+ window.location.href = passcodes[val];
+ } else {
+ alert("🌸 wrong code, try again");
+ }
+ }
+
+ document.getElementById("code").addEventListener("keydown", function (e) {
+ if (e.key === "Enter") go();
+ });
+</script>
+
+</body>
+</html>
